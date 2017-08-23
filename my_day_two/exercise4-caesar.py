@@ -10,8 +10,9 @@ def shift_characters(string,shift):
         #print(i)
         #print(ord(i) + myshift_int )
         #print("Shift is: ",myshift_int)
+        while (ord(i) + myshift_int) > 122:
+            myshift_int -= 26
         shifted_list.append(chr(ord(i) + myshift_int))
-
     #print(shifted_list)
     return(shifted_list)
 
